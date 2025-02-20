@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-public class ToDoList {
+public class ExamenPratique {
     
 
     public static void main(String[] args) {
@@ -60,79 +60,102 @@ public class ToDoList {
 
 
 
-public class CompteBancaire{
-    String titulaire;
-    double solde;
-    public CompteBancaire(String titulaire, double solde){
-        this.titulaire = titulaire;
-        this.solde = solde;
-    }
-    public void deposer(double montant){
-        if(montant > 0){
-            this.solde += montant;
-            System.out.printf("%.02f$ déposé. Nouveau solde : %.02f$\n",montant,this.solde);
+/*    public class CompteBancaire{
+        String titulaire;
+        double solde;
+        public CompteBancaire(String titulaire, double solde){
+            this.titulaire = titulaire;
+            this.solde = solde;
         }
-        else{
-            System.out.println("Montant invalide");
-        }
-    }
-    public void retirer(double montant){
-        if(montant > 0){
-            if(montant <= this.solde){
-                this.solde -= montant;
-                System.out.printf("%.02f$ retiré. Nouveau solde : %.02f$\n",montant,this.solde);
-
+        public void deposer(double montant){
+            if(montant > 0){
+                this.solde += montant;
+                System.out.printf("%.02f$ déposé. Nouveau solde : %.02f$\n",montant,this.solde);
             }
             else{
-                System.out.println("Solde insuffisant");
+                System.out.println("Montant invalide");
             }
         }
-        else{
-            System.out.println("Montant invalide");
-        }
-    }
-    public void afficherInfo(){
-        System.out.printf("Titulaire : %s | Solde : %.02f$\n", this.titulaire, this.solde);
-    }
-    public static void main(String[] args) {
-        CompteBancaire Alice = new CompteBancaire("Alice Dupont", 500.75);
-        Alice.afficherInfo();
-        Alice.deposer(150);
-        Alice.retirer(200);
-        Alice.retirer(500);
+        public void retirer(double montant){
+            if(montant > 0){
+                if(montant <= this.solde){
+                    this.solde -= montant;
+                    System.out.printf("%.02f$ retiré. Nouveau solde : %.02f$\n",montant,this.solde);
 
-    }
-}
-
-public class Trie {
-    public static void main(String[] args) {
-        int[] tab = new int[10];
-        for( int i = 0; i < tab.length ; i++){
-            tab[i] = (int)(Math.random() * 101);
-        }
-
-        System.out.print("[");
-        afficheTableau(tab);
-        int indiceMin;
-        int mem;
-        for( int i = 0; i < tab.length ; i++){
-            indiceMin = i;
-            for(int j = i + 1; j < tab.length; j++){
-                if(tab[j] < tab[indiceMin]){
-                    indiceMin = j;
+                }
+                else{
+                    System.out.println("Solde insuffisant");
                 }
             }
-            mem = tab[indiceMin];
-            tab[indiceMin] = tab[i];
-            tab[i] = mem;
-            
+            else{
+                System.out.println("Montant invalide");
+            }
         }
-        afficheTableau(tab);
-    }
-    public static void afficheTableau(int[] tab){
-        for( int i = 0; i < tab.length - 1 ; i++){
-            System.out.print(tab[i] + ", ");
+        public void afficherInfo(){
+            System.out.printf("Titulaire : %s | Solde : %.02f$\n", this.titulaire, this.solde);
         }
-        System.out.println( tab[tab.length - 1] + "]");
+        public static void main(String[] args) {
+            CompteBancaire Alice = new CompteBancaire("Alice Dupont", 500.75);
+            Alice.afficherInfo();
+            Alice.deposer(150);
+            Alice.retirer(200);
+            Alice.retirer(500);
+
+        }
     }
-}
+
+    public class Trie {
+        public static void main(String[] args) {
+            int[] tab = new int[10];
+            for( int i = 0; i < tab.length ; i++){
+                tab[i] = (int)(Math.random() * 101);
+            }
+
+            System.out.print("[");
+            afficheTableau(tab);
+            int indiceMin;
+            int mem;
+            for( int i = 0; i < tab.length ; i++){
+                indiceMin = i;
+                for(int j = i + 1; j < tab.length; j++){
+                    if(tab[j] < tab[indiceMin]){
+                        indiceMin = j;
+                    }
+                }
+                mem = tab[indiceMin];
+                tab[indiceMin] = tab[i];
+                tab[i] = mem;
+                
+            }
+            afficheTableau(tab);
+        }
+        public static void afficheTableau(int[] tab){
+            for( int i = 0; i < tab.length - 1 ; i++){
+                System.out.print(tab[i] + ", ");
+            }
+            System.out.println( tab[tab.length - 1] + "]");
+        }
+    }
+
+    import java.util.Scanner;
+
+    public class Alphabet {
+        public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter a number: ");
+            int n = scanner.next();
+
+            n = n % 26
+
+            char letter = 'a';
+
+            for(int i = 0; i < n; i++) {
+                System.out.print(letter);
+                letter++;
+            }
+
+        Scanner.close();
+
+        }
+    }*/
