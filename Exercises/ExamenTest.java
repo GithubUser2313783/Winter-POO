@@ -1,3 +1,5 @@
+package Exercises;
+
 public class ExamenTest {
     public static void main(String[] args) {
         Examen firstexam = new Examen("John", (byte) 100);

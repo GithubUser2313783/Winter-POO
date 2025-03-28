@@ -1,3 +1,5 @@
+package Exercises;
+
 public class Etudiant{
 	int age;
 	String nom = "John Doe";

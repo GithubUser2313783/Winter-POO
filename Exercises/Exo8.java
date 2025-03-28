@@ -1,3 +1,5 @@
+package Exercises;
+
 public class Exo8 {
     public static void main(String[] args) {
         int[] table = new int[5];

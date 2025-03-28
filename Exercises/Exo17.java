@@ -1,3 +1,5 @@
+package Exercises;
+
 public class Exo17{
 	public static void main(String[] args){	
 		char[] characters = {'a', 'b', 'e', 'i', 'f', 'o', 'p', 'u', 'y'};

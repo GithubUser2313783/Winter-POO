@@ -1,6 +1,16 @@
 package Exercises;
 
-public class Exo11 {
+public class Exo118 {
+    // - Créez un tableau d'entiers de taille 5. Remplissez le de 5 nombres aléatoires entre 0 et 100. 
+// - Affichez le
+// - Inverser l'ordre des éléments du tableau.
+// - Affichez le
+
+// **Exemple de sortie attendue** :
+// ```
+// [45,30,56,77,34]
+// [34,77,56,30,45]
+// ```
     public static void main(String[] args) {
         int[] tableau = new int[5];
 
@@ -30,3 +40,4 @@ public class Exo11 {
         System.out.println("]");
     }
 }
+

@@ -1,3 +1,5 @@
+package Exercises;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 public class ExamenPratique {
@@ -13,7 +15,7 @@ public class ExamenPratique {
             System.out.println("2.Marquer une tâche comme terminée");
             System.out.println("3.Afficher les tâches");
             System.out.println("4.Terminer le programme");
-            System.out.println("-" * 40);
+            System.out.println("-".repeat(40));
             System.out.println("Nombre de tâche : " + taches.size());
             System.out.println("-".repeat(60) + "\n");
 

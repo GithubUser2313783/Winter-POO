@@ -1,10 +1,12 @@
+package Exercises;
+
 public class Exo18{
 	public static void main(String[] args) {
 		
 		int[] table = new int[10000];
 		
 		for(int i = 0; i < table.length; i++){
-			table[i] = (int) Math.random() * 11};
+			table[i] = (int) Math.random() * 11;
 		}	
 		int[] occurences = new int[11];
 		
@@ -12,7 +14,7 @@ public class Exo18{
 			occurences[table[i]]++;
 		}
 		for (int i = 0; i < occurences.length; i++){
-			System.out.printf(format:"%d : %d")
+			System.out.printf("%d : %d");
 		}	
 /*		
 		int nbZero = 0;

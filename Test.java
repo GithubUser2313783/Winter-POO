@@ -5,7 +5,7 @@ public class Test {
 		System.out.println(word.toUpperCase());
 		System.out.println(word.contains("Bu"));
 		byte x = 2;
-		int grosx = x:
+		int grosx = x;
 		
 		int number = 213124;
 		String b String.valueOf(number);

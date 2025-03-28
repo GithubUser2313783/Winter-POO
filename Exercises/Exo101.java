@@ -1,3 +1,5 @@
+package Exercises;
+
 import java.util.ArrayList;
 public class Exo101{
     int age;

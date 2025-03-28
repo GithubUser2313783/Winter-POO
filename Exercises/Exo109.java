@@ -1,3 +1,5 @@
+package Exercises;
+
 public class Exo109 {
     public static void main(String[] args) {
         Etudiant etudiant1 = new Etudiant(12345, "John");

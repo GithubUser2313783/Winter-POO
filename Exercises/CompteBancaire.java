@@ -1,3 +1,5 @@
+package Exercises;
+
 public class CompteBancaire{
     String titulaire;
     double solde;
